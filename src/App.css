@@ -13,6 +13,7 @@
   width: 500px;
   height: 250px;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .title {
   text-align: center;
@@ -40,6 +41,12 @@
   padding:5px;
   color:#5372F0;
   margin-left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
+  transition: all 0.3s ease;
+}
+.option-button:hover{
+  color: white;
+  background: #5372F0;
 }
 .Buttons{
   display: flex;
@@ -49,10 +56,29 @@
   cursor: pointer;
 }
 .qoute-button{
-  background-color:#5372F0 ;
+  
+  border: 1px solid #5372F0;
   border-radius: 20px;
-  color: white;
+  color: #5372F0;
  cursor: pointer;
   width: 100px;
   height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px;
+  transition: all 0.3s ease;
+}
+.qoute-button:hover{
+  color: white;
+  background: #5372F0;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+    background-color: white;
+    width: 380px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }
